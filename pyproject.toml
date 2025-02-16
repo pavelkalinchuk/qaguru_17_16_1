@@ -6,17 +6,17 @@ authors = [
     {name = "pavelkalinchuk",email = "715m4s@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "selenium (==4.27.0)",
-    "pytest (>=8.3.4,<9.0.0)"
-]
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.group.dev.dependencies]
-pylint = "^3.3.4"
 
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^8.0"
+selene = "^2.0.0rc9"
+selenium = "^4.27.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.13"
